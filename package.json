@@ -1,0 +1,39 @@
+{
+  "name": "triage",
+  "version": "1.0.0",
+  "description": "AI-powered backlog grooming tool for TypeScript issues",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "repro-issue": "node dist/cli/repro-issue.js",
+    "comb-backlog-bugs": "node dist/cli/comb-backlog-bugs.js",
+    "lsp-call": "node dist/cli/lsp-call.js"
+  },
+  "bin": {
+    "repro-issue": "./dist/cli/repro-issue.js",
+    "comb-backlog-bugs": "./dist/cli/comb-backlog-bugs.js",
+    "lsp-call": "./dist/cli/lsp-call.js"
+  },
+  "keywords": [
+    "typescript",
+    "ai",
+    "triage",
+    "github",
+    "backlog"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@azure/identity": "^4.0.0",
+    "openai": "^4.0.0",
+    "@octokit/rest": "^20.0.0",
+    "commander": "^11.0.0",
+    "vscode-languageserver-protocol": "^3.17.0",
+    "vscode-jsonrpc": "^8.2.0"
+  }
+}

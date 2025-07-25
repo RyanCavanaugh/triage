@@ -1,0 +1,21 @@
+{
+  "tscPath": "tsc",
+  "tscLspPath": "typescript-language-server",
+  "defaultRepo": "Microsoft/TypeScript",
+  "workingDir": ".working",
+  "reproDir": ".working/repros",
+  "bugsDir": ".working/bugs",
+  "azure": {
+    "openaiEndpoint": "https://your-azure-openai-endpoint.openai.azure.com/",
+    "deploymentName": "gpt-4",
+    "apiVersion": "2024-02-01"
+  },
+  "github": {
+    "maxIssuesPerBatch": 10,
+    "retryAttempts": 3
+  },
+  "agent": {
+    "maxToolCalls": 20,
+    "timeoutMs": 300000
+  }
+}
